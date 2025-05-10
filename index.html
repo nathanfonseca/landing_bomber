@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomber Party</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/icon_B.png" type="image/x-icon" >
+    <link rel="stylesheet" href="style/style.css">    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-volume-up text-2xl text-blue-500 mr-2"></i>
+                <span class="text-xl font-bold">Bomber</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#destaques" class="hover:text-blue-400 transition">Destaques</a>
+                <a href="#especificacoes" class="hover:text-blue-400 transition">Especificações</a>
+                <a href="#galeria" class="hover:text-blue-400 transition">Galeria</a>
+                <a href="#depoimentos" class="hover:text-blue-400 transition">Depoimentos</a>
+            </nav>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="hidden md:block">
+                <a href="#comprar" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-medium transition">Comprar Agora</a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-gray-800 w-full absolute left-0" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#destaques" class="hover:text-blue-400 transition py-2">Destaques</a>
+                <a href="#especificacoes" class="hover:text-blue-400 transition py-2">Especificações</a>
+                <a href="#galeria" class="hover:text-blue-400 transition py-2">Galeria</a>
+                <a href="#depoimentos" class="hover:text-blue-400 transition py-2">Depoimentos</a>
+                <a href="#comprar" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-medium transition text-center">Comprar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Bomber Party 800</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Caixa de Som Bluetooth 50W com LED</h2>
+                <p class="text-lg mb-8 text-gray-200">Potência que vibra, luzes que encantam. A experiência sonora definitiva para suas festas e encontros.</p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#comprar" class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 rounded-full font-bold text-center transition">Comprar Agora</a>
+                    <a href="#galeria" class="border-2 border-white hover:bg-white hover:text-blue-800 px-8 py-3 rounded-full font-bold text-center transition">Ver Demonstração</a>
+                </div>
+                
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                        <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm text-gray-200">+5.000 clientes satisfeitos</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 relative">
+                <div class="relative led-effect rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="img/bomber_all.webp" alt="Bomber Party 800" class="w-full h-auto rounded-3xl">
+                </div>
+                <div class="absolute -bottom-5 -right-5 bg-blue-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
+                    <span class="text-sm">50W RMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="destaques" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Destaques Exclusivos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Descubra o que faz do Bomber Party 800 a escolha perfeita para suas festas e momentos especiais.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bluetooth text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bluetooth 5.0</h3>
+                    <p class="text-gray-600">Conexão estável e rápida com alcance de até 15 metros, compatível com todos os dispositivos.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Luzes LED RGB</h3>
+                    <p class="text-gray-600">Efeitos de iluminação sincronizados com a música, criando o clima perfeito para sua festa.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-battery-full text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bateria de Longa Duração</h3>
+                    <p class="text-gray-600">Até 12 horas de reprodução contínua com uma única carga. Basta carregar e aproveitar.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-volume-up text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Potência 50W RMS</h3>
+                    <p class="text-gray-600">Som potente e cristalino que preenche qualquer ambiente com graves profundos e agudos claros.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-link text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">TWS (True Wireless Stereo)</h3>
+                    <p class="text-gray-600">Conecte duas unidades para experiência estéreo verdadeira com som surround impressionante.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Resistente à Água</h3>
+                    <p class="text-gray-600">Proteção IPX5 contra respingos, perfeito para praia, piscina ou dias chuvosos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="especificacoes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Especificações Técnicas</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tecnologia de ponta para proporcionar a melhor experiência sonora.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="img/bomber_left.webp" alt="Bomber Party 800 - Vista lateral" class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-inner">
+                        <div class="mb-6 pb-4 border-b border-gray-200">
+                            <h3 class="text-xl font-semibold mb-3 text-blue-600">Sistema de Som</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Potência RMS: 50W</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Resposta de frequência: 50Hz - 20kHz</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Drivers: Woofer 4" + Tweeter 1"</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6 pb-4 border-b border-gray-200">
+                            <h3 class="text-xl font-semibold mb-3 text-purple-600">Conectividade</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Bluetooth 5.0 com alcance de 15m</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Tecnologia TWS (conexão com outra unidade)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Entrada AUX 3.5mm</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Cartão Micro SD (até 128GB)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6 pb-4 border-b border-gray-200">
+                            <h3 class="text-xl font-semibold mb-3 text-yellow-600">Bateria</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Bateria de íon-lítio 4400mAh</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Tempo de reprodução: até 12 horas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Tempo de carga: 3-4 horas</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3 text-red-600">Outras Características</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Luzes LED RGB com múltiplos efeitos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Resistência à água IPX5</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Microfone integrado para chamadas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Controles touch na parte superior</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Galeria</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Veja o Bomber Party 800 em ação em diferentes situações.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=881&q=80" alt="Bomber Party 800 na praia" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold">Praia Perfeita</h3>
+                        <p class="text-gray-600 text-sm">Resistente à água e areia para seus dias de sol</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bomber Party 800 em festa" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold">Noite de Festa</h3>
+                        <p class="text-gray-600 text-sm">Luzes LED que transformam qualquer ambiente</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Bomber Party 800 em par" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold">Experiência Estéreo</h3>
+                        <p class="text-gray-600 text-sm">Conecte duas unidades para som surround</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium">
+                    Ver mais fotos
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">O que dizem nossos clientes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Avaliações reais de quem já experimentou o Bomber Party 800</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Clara" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ana Clara</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Comprei para minha festa de aniversário e foi sensacional! O som é potente e as luzes deixaram o ambiente incrível. Todos queriam saber onde comprei!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ricardo" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ricardo</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Uso na minha chácara nos finais de semana. A bateria dura o dia todo e o som enche o espaço sem distorcer. Vale cada centavo!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Juliana" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Juliana</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Adoro levar para a praia! Não tem medo de água e areia, o som é ótimo e as luzes ficam lindas à noite. Só acho que poderia ser um pouco mais leve."</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-xl p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">Mais de 5.000 unidades vendidas</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Junte-se a milhares de clientes satisfeitos que transformaram seus momentos com o Bomber Party 800</p>
+                <a href="#comprar" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold inline-block transition">Quero o Meu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="comprar" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Escolha o Seu Bomber Party 800</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Selecione a opção perfeita para suas necessidades</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-semibold mb-2">Bomber Party 800</h3>
+                    <p class="text-gray-400 mb-4">Unidade única</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">R$ 399</span>
+                        <span class="text-gray-400 line-through ml-2">R$ 499</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Caixa de Som 50W</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Luzes LED RGB</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Bluetooth 5.0</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Bateria 12h</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block text-center bg-gray-700 hover:bg-gray-600 py-3 rounded-lg font-medium transition">Comprar Agora</a>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 border-2 border-blue-500 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">MAIS VENDIDO</div>
+                    <h3 class="text-xl font-semibold mb-2">Combo Eco+</h3>
+                    <p class="text-gray-400 mb-4">1 unidade + Carregador Solar</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">R$ 599</span>
+                        <span class="text-gray-400 line-through ml-2">R$ 798</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>1 Bomber Party 800</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>1 Carregador Solar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Experiência TWS Estéreo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Bateria 12h</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block text-center bg-blue-600 hover:bg-blue-500 py-3 rounded-lg font-medium transition">Comprar Agora</a>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 bg-gray-800 rounded-xl p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <h3 class="text-xl font-bold mb-2">Garantia de Satisfação</h3>
+                        <p class="text-gray-300">Se não amar seu Bomber Party 800, devolva em até 30 dias e receba seu dinheiro de volta.</p>
+                    </div>
+                    <div class="md:w-1/2 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center">
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-3xl text-blue-500 mr-3"></i>
+                            <span class="font-medium">2 anos de garantia</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-truck text-3xl text-blue-500 mr-3"></i>
+                            <span class="font-medium">Frete grátis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Perguntas Frequentes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas sobre o Bomber Party 800</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-4 border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                        <span class="font-medium text-left">Qual o tempo de entrega?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-600">O prazo de entrega varia conforme sua localização. Em capitais e regiões metropolitanas, normalmente entregamos em até 5 dias úteis. Para demais localidades, o prazo pode chegar a 10 dias úteis. Todos os pedidos incluem código de rastreio.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                        <span class="font-medium text-left">Como funciona a conexão TWS?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-600">A tecnologia True Wireless Stereo (TWS) permite conectar duas unidades do Bomber Party 800 para criar um sistema estéreo. Basta ativar o modo TWS em ambas as caixas (botão dedicado) e elas se sincronizarão automaticamente, uma reproduzindo o canal esquerdo e outra o direito, criando uma experiência sonora imersiva.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                        <span class="font-medium text-left">Posso usar enquanto carrega?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-600">...</p>
+                    </div>
+                </div>
+                
+                <div class="mb-4 border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                        <span class="font-medium text-left">Qual a resistência à água?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-600">O Bomber Party 800 possui classificação IPX5, o que significa que é resistente a jatos de água de baixa pressão de qualquer direção. Pode ser usado na praia, próximo à piscina ou em dias chuvosos sem problemas. No entanto, não é recomendado submergir o produto em água.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition">
+                        <span class="font-medium text-left">Como ativar os efeitos de luz?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-600">Os efeitos de luz LED são controlados pelo botão dedicado na parte superior da caixa de som. Cada pressionamento alterna entre os modos: RGB pulsante (sincronizado com a música), cores fixas, desligado e modo automático que muda as cores gradualmente. Você pode escolher entre 7 cores diferentes no modo fixo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-volume-up text-2xl text-blue-500 mr-2"></i>
+                        <span class="text-xl font-bold">Bomber</span>
+                    </div>
+                    <p class="text-gray-400">Potência que vibra, luzes que encantam. A experiência sonora definitiva para suas festas e encontros.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bomber Party 800</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Combo Eco+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Acessórios</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Garantia Estendida</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tutoriais</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Garantia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-2"></i>
+                            <span class="text-gray-400">contato@contato.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-500 mr-2"></i>
+                            <span class="text-gray-400">(11) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                            <span class="text-gray-400">Nova Friburgo - RJ</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Bomber . Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Termos de Serviço</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition z-50 pulse-animation">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <script src="script/script.js"></script>
+</body>
+</html>

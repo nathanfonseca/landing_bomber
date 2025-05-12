@@ -40,3 +40,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Carrossel imgs
+
+  const images = document.querySelectorAll('.carousel-img');
+  let current = 0;
+
+  setInterval(() => {
+    images.forEach((img, i) => {
+      img.classList.toggle('opacity-100', i === current);
+      img.classList.toggle('opacity-0', i !== current);
+    });
+    current = (current + 1) % images.length;
+  }, 1500);
